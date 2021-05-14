@@ -34,3 +34,18 @@ h4 {
 p {
     text-align: left;
 }
+
+.card {
+    background-color: #259EAC;
+    text-align: left;
+}
+
+footer {
+    background-color: #259EAC;
+    padding: 0.3rem;
+    vertical-align: middle;
+}
+
+hr {
+    border-top: 2px solid #259EAC
+}
