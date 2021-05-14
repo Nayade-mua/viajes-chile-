@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 2rem 0 0 0;
+    background-color: #000000;
+}
+
+.navbar {
+    background-color: #259EAC;
+    padding: 0.5rem 3rem !important;
+}

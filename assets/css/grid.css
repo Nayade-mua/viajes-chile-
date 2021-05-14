@@ -1,0 +1,682 @@
+/* CREACION DE GRID SISTEM */
+
+.row {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    /* background: grey; */
+    margin: 16px 0;
+}
+
+.col-1 {
+    width: 8.3333333333%;
+    height: auto;
+    background: grey;
+    float: left;
+    padding: 0 16px;
+}
+
+.col-2 {
+    width: calc(8.3333333333% * 2);
+    height: auto;
+    background: grey;
+    float: left;
+    padding: 0 16px;
+}
+
+.col-3 {
+    width: calc(8.3333333333% * 3);
+    height: auto;
+    background: grey;
+    float: left;
+    padding: 0 16px;
+}
+
+.col-4 {
+    width: calc(8.3333333333% * 4);
+    height: auto;
+    /* background: grey; */
+    float: left;
+    padding: 0 16px;
+}
+
+.col-5 {
+    width: calc(8.3333333333% * 5);
+    height: auto;
+    background: grey;
+    float: left;
+    padding: 0 16px;
+}
+
+.col-6 {
+    width: calc(8.3333333333% * 6);
+    height: auto;
+    /* background: grey; */
+    float: left;
+    padding: 0 16px;
+}
+
+.col-7 {
+    width: calc(8.3333333333% * 7);
+    height: auto;
+    background: grey;
+    float: left;
+    padding: 0 16px;
+}
+
+.col-8 {
+    width: calc(8.3333333333% * 8);
+    height: auto;
+    background: grey;
+    float: left;
+    padding: 0 16px;
+}
+
+.col-9 {
+    width: calc(8.3333333333% * 9);
+    height: auto;
+    background: grey;
+    float: left;
+    padding: 0 16px;
+}
+
+.col-10 {
+    width: calc(8.3333333333% * 10);
+    height: auto;
+    background: grey;
+    float: left;
+    padding: 0 16px;
+}
+
+.col-11 {
+    width: calc(8.3333333333% * 11);
+    height: auto;
+    background: grey;
+    float: left;
+    padding: 0 16px;
+}
+
+.col-12 {
+    width: calc(8.3333333333% * 12);
+    height: auto;
+    background: grey;
+    float: none;
+    padding: 0 16px;
+}
+
+
+
+
+
+/*
+  MEDIA QUERY PARA CONTROLAR LAS VISTAS
+  Extra small <576px  / PURPLE
+  Small       ≥576px  / ORANGE
+  Medium      ≥768px  / BLUE
+  Large       ≥992px  / GREEN
+  Extra large ≥1200px / RED
+  
+  UNIDADES ABSOLTAS SON:
+  PX,CM,MTS
+  
+  UNIDADES RELATIVAS
+  LA UNIDA EM, EX
+  1Em------ 2cm
+  
+  REM
+  
+  1rem -------> a la  dimension del font-size de la raíz de HTML
+  
+  
+  */
+
+/* Extra small <576px  / PURPLE */
+@media screen and (max-width:575px) {
+
+    html {
+        font-size: 12px !important;
+    }
+
+
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 0 auto;
+        /* background: purple; */
+    }
+
+    .col-1 {
+        width: 8.3333333333%;
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-2 {
+        width: calc(8.3333333333% * 2);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-3 {
+        width: calc(8.3333333333% * 3);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-4 {
+        width: calc(8.3333333333% * 4);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-5 {
+        width: calc(8.3333333333% * 5);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-6 {
+        width: calc(8.3333333333% * 6);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-7 {
+        width: calc(8.3333333333% * 7);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-8 {
+        width: calc(8.3333333333% * 8);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-9 {
+        width: calc(8.3333333333% * 9);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-10 {
+        width: calc(8.3333333333% * 10);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-11 {
+        width: calc(8.3333333333% * 11);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-12 {
+        width: calc(8.3333333333% * 12);
+        height: auto;
+        background: grey;
+        float: none;
+        padding: 0 16px;
+    }
+
+}
+
+/* Small       ≥576px  / ORANGE */
+@media screen and (min-width:576px) {
+
+    .container {
+        width: 540px;
+        height: auto;
+        margin: 0 auto 0 auto;
+        /* background: orange; */
+        padding: 2% 0;
+        overflow: hidden;
+    }
+
+    .col-sm-1 {
+        width: 8.3333333333%;
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-sm-2 {
+        width: calc(8.3333333333% * 2);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-sm-3 {
+        width: calc(8.3333333333% * 3);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-sm-4 {
+        width: calc(8.3333333333% * 4);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-sm-5 {
+        width: calc(8.3333333333% * 5);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-sm-6 {
+        width: calc(8.3333333333% * 6);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-sm-7 {
+        width: calc(8.3333333333% * 7);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-sm-8 {
+        width: calc(8.3333333333% * 8);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-sm-9 {
+        width: calc(8.3333333333% * 9);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-sm-10 {
+        width: calc(8.3333333333% * 10);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-sm-11 {
+        width: calc(8.3333333333% * 11);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-sm-12 {
+        width: calc(8.3333333333% * 12);
+        height: auto;
+        /* background: grey; */
+        float: none;
+        padding: 0 16px;
+    }
+
+    .col-sm-none {
+        display: none;
+    }
+
+}
+
+/* Medium      ≥768px  / BLUE */
+@media screen and (min-width:768px) {
+    .container {
+        width: 720px;
+        height: auto;
+        margin: 0 auto 0 auto;
+        /* background: blue; */
+        padding: 3% 0;
+    }
+
+    .col-md-1 {
+        width: 8.3333333333%;
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-md-2 {
+        width: calc(8.3333333333% * 2);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-md-3 {
+        width: calc(8.3333333333% * 3);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-md-4 {
+        width: calc(8.3333333333% * 4);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-md-5 {
+        width: calc(8.3333333333% * 5);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-md-6 {
+        width: calc(8.3333333333% * 6);
+        height: auto;
+        /* background: grey; */
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-md-7 {
+        width: calc(8.3333333333% * 7);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-md-8 {
+        width: calc(8.3333333333% * 8);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-md-9 {
+        width: calc(8.3333333333% * 9);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-md-10 {
+        width: calc(8.3333333333% * 10);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-md-11 {
+        width: calc(8.3333333333% * 11);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-md-12 {
+        width: calc(8.3333333333% * 12);
+        height: auto;
+        /* background: grey; */
+        float: none;
+        padding: 0 16px;
+    }
+
+
+}
+
+/* Large       ≥992px  / GREEN */
+@media screen and (min-width:992px) {
+    .container {
+        width: 960px;
+        height: auto;
+        margin: 0 auto 0 auto;
+        /* background: green; */
+    }
+
+    .col-lg-1 {
+        width: 8.3333333333%;
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-lg-2 {
+        width: calc(8.3333333333% * 2);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-lg-3 {
+        width: calc(8.3333333333% * 3);
+        height: auto;
+        /* background: grey; */
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-lg-4 {
+        width: calc(8.3333333333% * 4);
+        height: auto;
+        /*         background: grey; */
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-lg-5 {
+        width: calc(8.3333333333% * 5);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-lg-6 {
+        width: calc(8.3333333333% * 6);
+        height: auto;
+        /* background: grey; */
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-lg-7 {
+        width: calc(8.3333333333% * 7);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-lg-8 {
+        width: calc(8.3333333333% * 8);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-lg-9 {
+        width: calc(8.3333333333% * 9);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-lg-10 {
+        width: calc(8.3333333333% * 10);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-lg-11 {
+        width: calc(8.3333333333% * 11);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-lg-12 {
+        width: calc(8.3333333333% * 12);
+        height: auto;
+        background: grey;
+        float: none;
+        padding: 0 16px;
+    }
+
+}
+
+/* Extra large ≥1200px / RED */
+@media screen and (min-width:1200px) {
+    .container {
+        width: 1140px;
+        height: auto;
+        margin: 0 auto 0 auto;
+        /* background: red; */
+    }
+
+    .col-xl-1 {
+        width: 8.3333333333%;
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-xl-2 {
+        width: calc(8.3333333333% * 2);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-xl-3 {
+        width: calc(8.3333333333% * 3);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-xl-4 {
+        width: calc(8.3333333333% * 4);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-xl-5 {
+        width: calc(8.3333333333% * 5);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-xl-6 {
+        width: calc(8.3333333333% * 6);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-xl-7 {
+        width: calc(8.3333333333% * 7);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-xl-8 {
+        width: calc(8.3333333333% * 8);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-xl-9 {
+        width: calc(8.3333333333% * 9);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-xl-10 {
+        width: calc(8.3333333333% * 10);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-xl-11 {
+        width: calc(8.3333333333% * 11);
+        height: auto;
+        background: grey;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .col-xl-12 {
+        width: calc(8.3333333333% * 12);
+        height: auto;
+        background: grey;
+        float: none;
+        padding: 0 16px;
+    }
+}
