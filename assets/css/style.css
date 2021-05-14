@@ -12,3 +12,25 @@ body {
     background-color: #259EAC;
     padding: 0.5rem 3rem !important;
 }
+
+
+h2 {
+    margin: 2rem 0 0 0;
+    padding-bottom: 0;
+
+}
+
+h3 {
+    padding: 0.2rem 0;
+    background-color: #259EAC;
+}
+
+h4 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    text-align: left;
+}
